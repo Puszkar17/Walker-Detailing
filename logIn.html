@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="registro.css">
+    <link rel="stylesheet" href="registroLog.css">
     <link rel="icon" href="/img/1b56201c6c624f6f910fb82dd823fedc__9_-removebg-preview.png">
     <script src="https://kit.fontawesome.com/0b888e100b.js" crossorigin="anonymous"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -17,28 +17,34 @@
 <body>
 
     <main>
+
         <div class="Container">
-           
+            
+            <div class="contenedorImg">
+
+            </div>
+
             <div class="contenedorRegistro">    
+
+                <div class="circleLogo">
                 
+                    <i id="wheel" class="fa-solid fa-gear"></i>
+    
+                </div>    
 
                 <div class="singUp" autofocus>
 
                    <!-- <img class="logo" src="/img/1b56201c6c624f6f910fb82dd823fedc__9_-removebg-preview.png" alt="">-->  
 
-                    <h2>CREA TU CUENTA</h2>
+                    <h2>INICIA SESIÓN</h2>
 
-                    <h3>¿Ya tienes cuenta? <a href="/logIn.html">Iniciar sesión</a></h3>
+                    <h3>¿No tienes cuenta? <a href="/singUp.html">Registrate</a></h3>
 
                     <form class="formulario">
 
-                        <label for="Nombre">Nombre</label>
-                        <input type="text" id="Nombre" placeholder="Ingrese su nombre" autofocus required>
-                        <label for="Apellido">Apellido</label>
-                        <input type="text" id="Apellido" placeholder="Ingrese su apellido" required>
-                        <label for="Email">Dirección de correo electrónico</label>
-                        <input type="email" id="Email" placeholder="Ingrese su correo electrónico" required>
-
+                        <label for="User">Usuario</label>
+                        <input type="text" id="User" placeholder="Ingrese su usuario" autofocus required>
+                       
                         <div class="contenedorContraseña">
 
                             <div class="Contraseña1">
@@ -58,33 +64,28 @@
                         </div>      
                         
                         <div class="contenedorNoticias">
-                            <input type="checkbox" id="Noticias">
-                            <label for="Noticias">Quiero recibir noticias y descuentos via email.</label>
+                            <input type="checkbox" id="Remember">
+                            <label for="Remember">Recordar usuario y contraseña.</label>
                         </div>
                         
-                        <button type="submit" id="Enviar">CREAR MI CUENTA</button>
+                        <button type="submit" id="Enviar"><a class="ingresar" href="/index.html">INICIA SESIÓN</a></button>
 
                     </form>
 
                         <div class="botonesDeRegistro">
 
-                            <button id="registroGoogle"><i class="fa-brands fa-google"></i> Regístrate con Google</button>
-                            <button id="registroFacebook"><i class="fa-brands fa-facebook"></i> Regístrate con Facebook</button>
+                            <button id="registroGoogle"><i class="fa-brands fa-google"></i> Continuar con Google</button>
+                            <button id="registroFacebook"><i class="fa-brands fa-facebook"></i> Continuar con Facebook</button>
 
                         </div>
 
-                        <p class="terminos">Al registrarse, aceptas nuestros <a href="" target="_blank">términos de uso</a> y nuestra <a href="" target="_blank">política de privacidad</a>.</p>
-
                 </div>
-            
+
             </div>
 
         </div>
         
     </main>
-
-
-
     
 </body>
 

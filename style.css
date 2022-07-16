@@ -14,7 +14,7 @@ html {
 }
 
 body {
-
+    position: absolute;
     padding: 0;
     margin: 30px 12% 0px 12%;
     background-color: var(--color-Main);
@@ -630,7 +630,7 @@ h1:hover {
 }
 
 
-#aboutUs {
+#servicios {
     
     width: 100%;
     height: 200vh;
@@ -644,10 +644,92 @@ h1:hover {
 
 .ventajas {
     width: 100%;
-    height: 20%;
+    height: 25%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    box-sizing: border-box;
     background-color: var(--color-color);
+    animation: borderClr 5s infinite ease;
+    position: relative;
 }
 
+
+
+.ventajas2 {
+    width: 100%;
+    height: 25%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    box-sizing: border-box;
+    background-color: var(--color-color);
+    animation: borderClr 8s infinite ease-in-out;
+    position: relative;
+}
+
+@keyframes borderClr {
+    0%{
+        background-color:  var(--color-detail);
+        
+    }
+    33%{
+        background-color: var(--color-Secondary);
+       
+    }
+    66%{
+        background-color: var(--color-color);
+    }
+    100%{
+        background-color: var(--color-detail);
+        
+    }
+}
+
+.pregunta {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+ 
+
+}
+.pregunta h3 {
+    margin: 0;
+    padding: 0;
+    font-size: 2.2em;
+    font-family: var(--font-Main);
+    position: absolute;
+    align-items: center;
+}
+
+.explicacion {
+    box-sizing: border-box;
+    width: 50%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    contain: content;
+    padding: 0 50px;
+    margin: 0;
+    background-color: var(--color-Main);
+   
+
+}
+
+.explicacion p {
+    padding: 50px;
+    margin: 0;
+    text-align: justify;
+    font-family: var(--font-Main);
+    font-size: 1.4em;
+    font-weight: 400;
+    color: var(--color-terciary);
+}
 
 #jobs {
    
@@ -1210,4 +1292,25 @@ textarea {
 audio {
     height: 20px;
     width: 100px;
+}
+
+@media (max-width: 1220px) {
+   #home{
+        width: 100%;
+   }
+   main{
+    width: 100%;
+   }
+   #aboutUs{
+    width: 100%;
+   }
+   #jobs{
+    width: 100%;
+   }
+   #contact{
+    width: 100%;
+   }
+   .cartel {
+    width: 100%;
+   }
 }

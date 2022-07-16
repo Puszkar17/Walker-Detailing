@@ -1,0 +1,412 @@
+:root {
+
+    --color-Main: #707BC2;
+    --color-Secondary: #1877f2;
+    --color-terciary: #D5D5D5;
+    --font-Main:'Anek Malayalam', sans-serif;
+}
+
+body {
+    
+    margin: 0;
+    padding: 0;
+    background-color: #111113;
+}
+
+.container {
+
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+}
+
+.contenedorRegistro {
+
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+    background-color: #1a191d;
+    width: 40%;
+    height: 68%;
+    position: absolute;
+
+}
+
+.contenedorRegistro img {
+    position: absolute;
+    bottom: 95%;
+    left: 38%;
+    
+
+}
+
+.singUp {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: #1a191d;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    font-family: var(--font-Main);
+    
+}
+
+.singUp h2 {
+    color: white;
+    margin-bottom: 0;
+
+}
+
+.singUp h3 {
+    color: white;
+    margin-top: 0;
+    font-weight: 400;
+}
+
+.singUp h3 a {
+
+    font-style: none;
+    text-decoration: none;
+    color: #1877f2;
+
+}
+
+.formulario {
+
+    display: flex;
+    flex-direction: column;
+    width: 74.2%;
+    border-bottom: solid 1px var(--color-Main);
+    padding-bottom: 20px;
+    
+}
+
+.formulario input {
+    
+    border:none;
+    border-bottom: solid 2px var(--color-Main);
+    background-color: transparent;
+    font-size: 1em;
+    font-weight: 200;
+    font-family: var(--font-Main);
+    color: white;
+    margin: 10px;
+    outline: none;
+    animation: colorBorder 7s ease infinite;
+}
+
+.formulario input:hover {
+
+    border-bottom: solid 2px var(--color-Secondary);
+}
+
+.formulario label {
+
+    color: white;
+    font-family: var(--font-Main);
+    font-weight: 400;
+    font-size: 1.15em;
+    
+
+}
+
+@keyframes colorBorder {
+    0%{
+        border-bottom: solid 2px white;
+    }
+    25%{
+        border-bottom: solid 2px var(--color-Secondary)
+    }
+    50%{
+        border-bottom: solid 2px var(--color-Main);
+    }
+    75%{
+        border-bottom: solid 2px var(--color-Secondary);
+    }
+    100%{
+        border-bottom: solid 2px white;
+    }
+}
+
+.terminos {
+
+    color: white;
+    margin-top: 30px;
+    font-size: 0.9em;
+    font-weight: 300;
+
+}
+
+.formulario button {
+
+    border: none;
+    background-color: var(--color-Main);
+    height: 40px;
+    width: 100%;
+    font-family: var(--font-Main);
+    font-weight: 500;
+    font-size: 17px;
+    color: #EEE;
+    cursor: pointer;
+}
+
+.formulario button:hover {
+    font-size: 20px;
+    background-color: var(--color-Secondary)
+}
+
+.botonesDeRegistro {
+
+    display: flex;
+
+}
+
+.botonesDeRegistro i {
+   
+    font-size: 21px;
+    margin-right: 20px;
+    background-color: #EEE;
+    width: 18%;
+    height: 100%;
+    color: #1877f2;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+#registroGoogle i {
+
+    color: #3f82da;
+}
+
+#registroGoogle {
+
+    border: none;
+    background-color: #3f82da;
+    height: 40px;
+    width: 280px;
+    font-family: var(--font-Main);
+    font-weight: 500;
+    font-size: 17px;
+    color: #EEE;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;   
+    padding-left: 1px;
+    margin-right: 10px; 
+
+}
+
+#registroGmail:hover {
+    font-size: 20px;
+}
+
+#registroFacebook {
+
+    border: none;
+    background-color: #1877f2;
+    height: 40px;
+    width: 280px;
+    font-family: var(--font-Main);
+    font-weight: 500;
+    font-size: 17px;
+    color: #EEE;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;   
+    padding-left: 1px; 
+
+}
+
+.contenedorContraseña {
+
+    display: flex;
+    width: 100%;
+
+}
+
+.contraseña1 {
+
+    margin-right: 15px;
+}
+
+.contraseña1 input {
+
+    width: 94%;
+    margin-right: 20px;
+}
+
+.contraseña2 input {
+
+    width: 94%;
+    margin-right: 20px;
+}
+
+.contenedorNoticias {
+
+    margin-top: 2px;
+    margin-bottom: 15px;
+}
+
+.logIn {
+
+    width: 50%;
+    height: 100%;
+    background-color: #EEE;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-flow: column nowrap;
+    font-family: var(--font-Main);
+    -webkit-box-shadow: 30px 0px 26px -14px rgba(112,123,194,1);
+    -moz-box-shadow: 30px 0px 26px -14px rgba(112,123,194,1);
+    box-shadow: 30px 0px 26px -14px rgba(112,123,194,1);
+   
+}
+
+.InicioDeSesion {
+
+    display: flex;
+    flex-direction: column;
+}
+
+.logIn input {
+   
+    border:none;
+    border-bottom: solid 2px var(--color-Main);
+    background-color: transparent;
+    font-size: 1em;
+    font-weight: 200;
+    font-family: var(--font-Main);
+    margin: 10px;
+    outline: none;
+
+}
+
+.InicioDeSesion label {
+
+    font-family: var(--font-Main);
+    font-weight: 400;
+    font-size: 1.1em;
+
+}
+
+#inicioGmail {
+
+    border: none;
+    background-color: rgb(212, 78, 60);
+    height: 30px;
+    width: 400px;
+    font-family: var(--font-Main);
+    font-weight: 500;
+    font-size: 17px;
+    color: #EEE;
+    cursor: pointer;
+    margin-top: 20px;
+
+}
+
+#inicioFace {
+
+    border: none;
+    background-color: #1877f2;
+    height: 30px;
+    width: 400px;
+    font-family: var(--font-Main);
+    font-weight: 500;
+    font-size: 17px;
+    color: #EEE;
+    cursor: pointer;
+    margin-top: 15px;
+
+}
+
+.InicioDeSesion button {
+
+    border: none;
+    background-color: var(--color-Main);
+    height: 30px;
+    font-family: var(--font-Main);
+    font-weight: 500;
+    font-size: 17px;
+    color: #EEE;
+    cursor: pointer;
+    margin-top: 15px;
+}
+
+.InicioDeSesion button a{
+    
+    border: none;
+    background-color: var(--color-Main);
+    height: 30px;
+    font-family: var(--font-Main);
+    font-weight: 500;
+    font-size: 17px;
+    color: #EEE;
+    cursor: pointer;
+    margin-top: 15px;
+    font-style: none;
+    text-decoration: none;  
+}
+
+.InicioDeSesion button a:hover {
+    font-size: 20px;
+}
+#inicioFace:hover {
+    font-size: 20px;
+}
+
+#inicioGmail:hover {
+    font-size: 20px;
+}
+
+.circleLogo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 120px;
+    height: 120px;
+    position: absolute;
+    top: 13%;
+    left: 65%;
+  
+}
+
+
+#wheel {
+    animation: wheel-move infinite 5s ease-out;
+    color: var(--color-terciary);
+    filter: drop-shadow(3px 3px 3px var(--color-Main));
+    position: absolute;
+    font-size: 50px;
+    cursor: pointer;
+    z-index: 1;
+}
+
+#wheel:hover {
+    animation: none;
+}
+
+@keyframes wheel-move {
+
+    0% {
+        transform:rotate(160deg);
+    }
+    50% {
+        transform: rotate(480deg);
+    }
+    100%{
+ 
+        transform:rotate(160deg);
+    }
+    
+}
