@@ -1314,3 +1314,58 @@ audio {
     width: 100%;
    }
 }
+
+@media screen and (max-width:1850px) {
+    
+   main p {
+        width: 60%;
+   }
+}
+
+
+@media screen and (max-width:1586px) {
+    
+    .registros {
+        width: 30%;
+    }
+    .cartel p {
+        font-size: 1em;
+    }
+    main p {
+        width: 65%;
+    }
+}
+
+@media screen and (max-width:1552px) {
+    
+   main p{
+        width: 70%;
+   }
+}
+
+@media screen and (max-width:1443px) {
+    
+    main p{
+         width: 80%;
+    }
+ }
+
+@media screen and (max-width:1324px) {
+    
+    .registros {
+        width: 40%;
+    }
+}
+
+@media screen and (min-width:1000px) and (max-width:1270px) {
+    
+    #flags {
+         display: none;
+    }
+    main p {
+        width: 70%;
+    }
+    nav button {
+        margin: 0px 10px;
+    }
+ }
