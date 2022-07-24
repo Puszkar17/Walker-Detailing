@@ -14,7 +14,7 @@ html {
 }
 
 body {
-    position: absolute;
+    position: relative;
     padding: 0;
     margin: 30px 12% 0px 12%;
     background-color: var(--color-Main);
@@ -948,7 +948,9 @@ h1:hover {
     margin-top: 30px;
     margin-right: 40px;
     box-sizing: border-box;
+  
 }
+
 
 .formulario i {
     position: absolute;
@@ -968,6 +970,10 @@ h1:hover {
     font-size: 1.2em;
     display: flex;
     justify-content: center;
+}
+iframe {
+    width: 85%;
+    height: 85%;
 }
 
 .contentF svg {
@@ -1294,26 +1300,6 @@ audio {
     width: 100px;
 }
 
-@media (max-width: 1220px) {
-   #home{
-        width: 100%;
-   }
-   main{
-    width: 100%;
-   }
-   #aboutUs{
-    width: 100%;
-   }
-   #jobs{
-    width: 100%;
-   }
-   #contact{
-    width: 100%;
-   }
-   .cartel {
-    width: 100%;
-   }
-}
 
 @media screen and (max-width:1850px) {
     
@@ -1357,7 +1343,7 @@ audio {
     }
 }
 
-@media screen and (min-width:1000px) and (max-width:1270px) {
+@media screen and (min-width:410px)  and (max-width:1270px) {
     
     #flags {
          display: none;
@@ -1369,3 +1355,4 @@ audio {
         margin: 0px 10px;
     }
  }
+
